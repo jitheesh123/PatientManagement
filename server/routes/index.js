@@ -1,0 +1,15 @@
+var express = require('express');
+var router = express.Router();
+router.use('/Contact', require('../api/Contact/index'));
+router.use('/Patient', require('../api/Patient/index'));
+router.use('/ChangePassword', require('../api/ChangewPassword/index'));
+router.use('/auth/login', require('../api/Authentication/index'));
+router.use('/Profile', require('../api/Profile/index'));
+router.use('/Disease', require('../api/Disease/index'));
+router.use('/consultation', require('../api/Consultation/index'));
+router.use('/hospital', require('../api/Hospital/index'));
+router.use('/Transactions', require('../api/Transactions/index'));
+router.use('/Patients', require('../api/Patients/index'));
+router.use('/Certificate', require('../api/Certificate/index'));
+router.use('/vaccination', require('../api/Vaccination/index'));
+module.exports = router;
